@@ -1,0 +1,9 @@
+# Preserve deployed file bytes, including existing line endings.
+* -text
+
+# The deployed HTML uses CRLF; treat CR as part of the line ending.
+index.html whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Generated Three.js bundles embed shaders with significant source formatting.
+# Do not rewrite the published bundles just to normalize whitespace.
+static/app.*.js -whitespace

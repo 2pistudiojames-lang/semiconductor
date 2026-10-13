@@ -1,0 +1,30 @@
+# Credentials and runtime data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+credentials.json
+secrets.json
+
+# Local tooling and generated evidence
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+.qa/
+.planning/
+logs/
+*.log
+backups/
+.DS_Store
+
+# Keep deployed .gz, bundled JS/CSS, images, and audio in version control.
